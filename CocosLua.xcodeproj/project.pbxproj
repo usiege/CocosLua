@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		627CB84520C23A8C00D22923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CB84420C23A8C00D22923 /* AppDelegate.swift */; };
+		627CB84A20C23A8C00D22923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627CB84820C23A8C00D22923 /* Main.storyboard */; };
+		627CB84C20C23A8C00D22923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627CB84B20C23A8C00D22923 /* Assets.xcassets */; };
+		627CB84F20C23A8C00D22923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627CB84D20C23A8C00D22923 /* LaunchScreen.storyboard */; };
+		627CB85920C23AB700D22923 /* OCBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 627CB85820C23AB700D22923 /* OCBridge.mm */; };
+		627CB85D20C23AED00D22923 /* BridgeLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627CB85B20C23AED00D22923 /* BridgeLua.cpp */; };
+		627CB9B120C23EC900D22923 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627CB96B20C23EC900D22923 /* AppDelegate.cpp */; };
+		627CB9B520C23EDA00D22923 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 627CB9B220C23EDA00D22923 /* res */; };
+		627CB9B620C23EDA00D22923 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 627CB9B320C23EDA00D22923 /* config.json */; };
+		627CB9B720C23EDA00D22923 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 627CB9B420C23EDA00D22923 /* src */; };
+		627CB9E420C240B400D22923 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9E320C240B400D22923 /* UIKit.framework */; };
+		627CB9E620C240C100D22923 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9E520C240C100D22923 /* OpenGLES.framework */; };
+		627CB9E820C240CF00D22923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9E720C240CF00D22923 /* Foundation.framework */; };
+		627CB9EA20C2413100D22923 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9E920C2413100D22923 /* libz.1.dylib */; };
+		627CB9EC20C2416E00D22923 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9EB20C2416E00D22923 /* libiconv.2.dylib */; };
+		627CB9EE20C2419100D22923 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9ED20C2419100D22923 /* CoreText.framework */; };
+		627CB9F020C2419800D22923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9EF20C2419800D22923 /* CFNetwork.framework */; };
+		627CB9F220C2419E00D22923 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9F120C2419E00D22923 /* Security.framework */; };
+		627CB9F420C241A800D22923 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9F320C241A800D22923 /* CoreMotion.framework */; };
+		627CB9F620C241B200D22923 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9F520C241B200D22923 /* QuartzCore.framework */; };
+		627CB9F820C241B800D22923 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9F720C241B800D22923 /* OpenAL.framework */; };
+		627CB9FA20C241C100D22923 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9F920C241C100D22923 /* AVFoundation.framework */; };
+		627CB9FC20C241CA00D22923 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9FB20C241CA00D22923 /* CoreGraphics.framework */; };
+		627CB9FE20C2423900D22923 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CB9FD20C2423900D22923 /* AudioToolbox.framework */; };
+		627CBA0120C2447B00D22923 /* CocosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 627CBA0020C2447B00D22923 /* CocosViewController.mm */; };
+		627CBA0620C249DF00D22923 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CBA0520C249DF00D22923 /* MediaPlayer.framework */; };
+		627CBA2820C26FBD00D22923 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CBA1520C26F1100D22923 /* libcocos2d iOS.a */; };
+		627CBA2920C26FBD00D22923 /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CBA1B20C26F5E00D22923 /* libluacocos2d iOS.a */; };
+		627CBA2A20C26FBD00D22923 /* libsimulator iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627CBA2120C26F8200D22923 /* libsimulator iOS.a */; };
+		627CBA2C20C2B0BD00D22923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CBA2B20C2B0BD00D22923 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		627CBA1420C26F1100D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1020C26F1000D22923 /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4D641783777C0073F6A7;
+			remoteInfo = "libcocos2d iOS";
+		};
+		627CBA1A20C26F5E00D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1620C26F5D00D22923 /* cocos2d_lua_bindings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15EFA616198B2DAA000C57D3;
+			remoteInfo = "libluacocos2d iOS";
+		};
+		627CBA2020C26F8200D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1C20C26F8200D22923 /* libsimulator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F7214851A5C28BA00DAED06;
+			remoteInfo = "libsimulator iOS";
+		};
+		627CBA2220C26FA400D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1C20C26F8200D22923 /* libsimulator.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F7214841A5C28BA00DAED06;
+			remoteInfo = "libsimulator iOS";
+		};
+		627CBA2420C26FA400D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1620C26F5D00D22923 /* cocos2d_lua_bindings.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 15EFA59E198B2DAA000C57D3;
+			remoteInfo = "libluacocos2d iOS";
+		};
+		627CBA2620C26FA400D22923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627CBA1020C26F1000D22923 /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4C241783777C0073F6A7;
+			remoteInfo = "libcocos2d iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		627CB84120C23A8C00D22923 /* CocosLua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocosLua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		627CB84420C23A8C00D22923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		627CB84920C23A8C00D22923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		627CB84B20C23A8C00D22923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		627CB84E20C23A8C00D22923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		627CB85020C23A8C00D22923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627CB85620C23AB700D22923 /* CocosLua-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocosLua-Bridging-Header.h"; sourceTree = "<group>"; };
+		627CB85720C23AB700D22923 /* OCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBridge.h; sourceTree = "<group>"; };
+		627CB85820C23AB700D22923 /* OCBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCBridge.mm; sourceTree = "<group>"; };
+		627CB85B20C23AED00D22923 /* BridgeLua.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeLua.cpp; sourceTree = "<group>"; };
+		627CB85C20C23AED00D22923 /* BridgeLua.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeLua.hpp; sourceTree = "<group>"; };
+		627CB96920C23EC900D22923 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		627CB96A20C23EC900D22923 /* lua_module_register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_module_register.h; sourceTree = "<group>"; };
+		627CB96B20C23EC900D22923 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		627CB9B220C23EDA00D22923 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		627CB9B320C23EDA00D22923 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		627CB9B420C23EDA00D22923 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		627CB9E320C240B400D22923 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		627CB9E520C240C100D22923 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		627CB9E720C240CF00D22923 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		627CB9E920C2413100D22923 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		627CB9EB20C2416E00D22923 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		627CB9ED20C2419100D22923 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		627CB9EF20C2419800D22923 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		627CB9F120C2419E00D22923 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		627CB9F320C241A800D22923 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		627CB9F520C241B200D22923 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		627CB9F720C241B800D22923 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		627CB9F920C241C100D22923 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		627CB9FB20C241CA00D22923 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		627CB9FD20C2423900D22923 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		627CB9FF20C2447B00D22923 /* CocosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosViewController.h; sourceTree = "<group>"; };
+		627CBA0020C2447B00D22923 /* CocosViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CocosViewController.mm; sourceTree = "<group>"; };
+		627CBA0520C249DF00D22923 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		627CBA1020C26F1000D22923 /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "cocos2d-x/build/cocos2d_libs.xcodeproj"; sourceTree = "<group>"; };
+		627CBA1620C26F5D00D22923 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
+		627CBA1C20C26F8200D22923 /* libsimulator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libsimulator.xcodeproj; path = "cocos2d-x/tools/simulator/libsimulator/proj.ios_mac/libsimulator.xcodeproj"; sourceTree = "<group>"; };
+		627CBA2B20C2B0BD00D22923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627CB83E20C23A8C00D22923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627CBA2820C26FBD00D22923 /* libcocos2d iOS.a in Frameworks */,
+				627CBA2920C26FBD00D22923 /* libluacocos2d iOS.a in Frameworks */,
+				627CBA2A20C26FBD00D22923 /* libsimulator iOS.a in Frameworks */,
+				627CBA0620C249DF00D22923 /* MediaPlayer.framework in Frameworks */,
+				627CB9FE20C2423900D22923 /* AudioToolbox.framework in Frameworks */,
+				627CB9FA20C241C100D22923 /* AVFoundation.framework in Frameworks */,
+				627CB9F820C241B800D22923 /* OpenAL.framework in Frameworks */,
+				627CB9F620C241B200D22923 /* QuartzCore.framework in Frameworks */,
+				627CB9FC20C241CA00D22923 /* CoreGraphics.framework in Frameworks */,
+				627CB9F420C241A800D22923 /* CoreMotion.framework in Frameworks */,
+				627CB9EE20C2419100D22923 /* CoreText.framework in Frameworks */,
+				627CB9F220C2419E00D22923 /* Security.framework in Frameworks */,
+				627CB9F020C2419800D22923 /* CFNetwork.framework in Frameworks */,
+				627CB9E820C240CF00D22923 /* Foundation.framework in Frameworks */,
+				627CB9E620C240C100D22923 /* OpenGLES.framework in Frameworks */,
+				627CB9E420C240B400D22923 /* UIKit.framework in Frameworks */,
+				627CB9EC20C2416E00D22923 /* libiconv.2.dylib in Frameworks */,
+				627CB9EA20C2413100D22923 /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		627CB83820C23A8B00D22923 = {
+			isa = PBXGroup;
+			children = (
+				627CBA1C20C26F8200D22923 /* libsimulator.xcodeproj */,
+				627CBA1620C26F5D00D22923 /* cocos2d_lua_bindings.xcodeproj */,
+				627CBA1020C26F1000D22923 /* cocos2d_libs.xcodeproj */,
+				627CB96820C23EC900D22923 /* Classes */,
+				627CB90D20C23EC900D22923 /* Resources */,
+				627CB84320C23A8C00D22923 /* CocosLua */,
+				627CB84220C23A8C00D22923 /* Products */,
+				627CB9DF20C2409D00D22923 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		627CB84220C23A8C00D22923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627CB84120C23A8C00D22923 /* CocosLua.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627CB84320C23A8C00D22923 /* CocosLua */ = {
+			isa = PBXGroup;
+			children = (
+				627CB84420C23A8C00D22923 /* AppDelegate.swift */,
+				627CBA2B20C2B0BD00D22923 /* ViewController.swift */,
+				627CB85620C23AB700D22923 /* CocosLua-Bridging-Header.h */,
+				627CB85A20C23ABD00D22923 /* bridge */,
+				627CB84820C23A8C00D22923 /* Main.storyboard */,
+				627CB84B20C23A8C00D22923 /* Assets.xcassets */,
+				627CB84D20C23A8C00D22923 /* LaunchScreen.storyboard */,
+				627CB85020C23A8C00D22923 /* Info.plist */,
+			);
+			path = CocosLua;
+			sourceTree = "<group>";
+		};
+		627CB85A20C23ABD00D22923 /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				627CB9FF20C2447B00D22923 /* CocosViewController.h */,
+				627CBA0020C2447B00D22923 /* CocosViewController.mm */,
+				627CB85720C23AB700D22923 /* OCBridge.h */,
+				627CB85820C23AB700D22923 /* OCBridge.mm */,
+				627CB85B20C23AED00D22923 /* BridgeLua.cpp */,
+				627CB85C20C23AED00D22923 /* BridgeLua.hpp */,
+			);
+			path = bridge;
+			sourceTree = "<group>";
+		};
+		627CB90D20C23EC900D22923 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				627CB9B320C23EDA00D22923 /* config.json */,
+				627CB9B220C23EDA00D22923 /* res */,
+				627CB9B420C23EDA00D22923 /* src */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		627CB96820C23EC900D22923 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				627CB96920C23EC900D22923 /* AppDelegate.h */,
+				627CB96A20C23EC900D22923 /* lua_module_register.h */,
+				627CB96B20C23EC900D22923 /* AppDelegate.cpp */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		627CB9DF20C2409D00D22923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				627CBA0520C249DF00D22923 /* MediaPlayer.framework */,
+				627CB9FD20C2423900D22923 /* AudioToolbox.framework */,
+				627CB9FB20C241CA00D22923 /* CoreGraphics.framework */,
+				627CB9F920C241C100D22923 /* AVFoundation.framework */,
+				627CB9F720C241B800D22923 /* OpenAL.framework */,
+				627CB9F520C241B200D22923 /* QuartzCore.framework */,
+				627CB9F320C241A800D22923 /* CoreMotion.framework */,
+				627CB9F120C2419E00D22923 /* Security.framework */,
+				627CB9EF20C2419800D22923 /* CFNetwork.framework */,
+				627CB9ED20C2419100D22923 /* CoreText.framework */,
+				627CB9EB20C2416E00D22923 /* libiconv.2.dylib */,
+				627CB9E920C2413100D22923 /* libz.1.dylib */,
+				627CB9E720C240CF00D22923 /* Foundation.framework */,
+				627CB9E520C240C100D22923 /* OpenGLES.framework */,
+				627CB9E320C240B400D22923 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		627CBA1120C26F1000D22923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627CBA1520C26F1100D22923 /* libcocos2d iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627CBA1720C26F5D00D22923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627CBA1B20C26F5E00D22923 /* libluacocos2d iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627CBA1D20C26F8200D22923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627CBA2120C26F8200D22923 /* libsimulator iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627CB84020C23A8C00D22923 /* CocosLua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627CB85320C23A8C00D22923 /* Build configuration list for PBXNativeTarget "CocosLua" */;
+			buildPhases = (
+				627CB83D20C23A8C00D22923 /* Sources */,
+				627CB83E20C23A8C00D22923 /* Frameworks */,
+				627CB83F20C23A8C00D22923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627CBA2320C26FA400D22923 /* PBXTargetDependency */,
+				627CBA2520C26FA400D22923 /* PBXTargetDependency */,
+				627CBA2720C26FA400D22923 /* PBXTargetDependency */,
+			);
+			name = CocosLua;
+			productName = CocosLua;
+			productReference = 627CB84120C23A8C00D22923 /* CocosLua.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		627CB83920C23A8C00D22923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = charles;
+				TargetAttributes = {
+					627CB84020C23A8C00D22923 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 627CB83C20C23A8C00D22923 /* Build configuration list for PBXProject "CocosLua" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 627CB83820C23A8B00D22923;
+			productRefGroup = 627CB84220C23A8C00D22923 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 627CBA1120C26F1000D22923 /* Products */;
+					ProjectRef = 627CBA1020C26F1000D22923 /* cocos2d_libs.xcodeproj */;
+				},
+				{
+					ProductGroup = 627CBA1720C26F5D00D22923 /* Products */;
+					ProjectRef = 627CBA1620C26F5D00D22923 /* cocos2d_lua_bindings.xcodeproj */;
+				},
+				{
+					ProductGroup = 627CBA1D20C26F8200D22923 /* Products */;
+					ProjectRef = 627CBA1C20C26F8200D22923 /* libsimulator.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				627CB84020C23A8C00D22923 /* CocosLua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		627CBA1520C26F1100D22923 /* libcocos2d iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d iOS.a";
+			remoteRef = 627CBA1420C26F1100D22923 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		627CBA1B20C26F5E00D22923 /* libluacocos2d iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluacocos2d iOS.a";
+			remoteRef = 627CBA1A20C26F5E00D22923 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		627CBA2120C26F8200D22923 /* libsimulator iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsimulator iOS.a";
+			remoteRef = 627CBA2020C26F8200D22923 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627CB83F20C23A8C00D22923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627CB84F20C23A8C00D22923 /* LaunchScreen.storyboard in Resources */,
+				627CB9B520C23EDA00D22923 /* res in Resources */,
+				627CB9B620C23EDA00D22923 /* config.json in Resources */,
+				627CB9B720C23EDA00D22923 /* src in Resources */,
+				627CB84C20C23A8C00D22923 /* Assets.xcassets in Resources */,
+				627CB84A20C23A8C00D22923 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627CB83D20C23A8C00D22923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627CBA2C20C2B0BD00D22923 /* ViewController.swift in Sources */,
+				627CB85D20C23AED00D22923 /* BridgeLua.cpp in Sources */,
+				627CBA0120C2447B00D22923 /* CocosViewController.mm in Sources */,
+				627CB9B120C23EC900D22923 /* AppDelegate.cpp in Sources */,
+				627CB85920C23AB700D22923 /* OCBridge.mm in Sources */,
+				627CB84520C23A8C00D22923 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		627CBA2320C26FA400D22923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libsimulator iOS";
+			targetProxy = 627CBA2220C26FA400D22923 /* PBXContainerItemProxy */;
+		};
+		627CBA2520C26FA400D22923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libluacocos2d iOS";
+			targetProxy = 627CBA2420C26FA400D22923 /* PBXContainerItemProxy */;
+		};
+		627CBA2720C26FA400D22923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libcocos2d iOS";
+			targetProxy = 627CBA2620C26FA400D22923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		627CB84820C23A8C00D22923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627CB84920C23A8C00D22923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		627CB84D20C23A8C00D22923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627CB84E20C23A8C00D22923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		627CB85120C23A8C00D22923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		627CB85220C23A8C00D22923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		627CB85420C23A8C00D22923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cocos2d-x/cocos",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua/tolua",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua/lua",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua",
+					"$(PROJECT_DIR)/cocos2d-x/external",
+					"$(PROJECT_DIR)/cocos2d-x/Classes",
+				);
+				INFOPLIST_FILE = CocosLua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charles.CocosLua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocosLua/CocosLua-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		627CB85520C23A8C00D22923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cocos2d-x/cocos",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua/tolua",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua/lua",
+					"$(PROJECT_DIR)/cocos2d-x/external/lua",
+					"$(PROJECT_DIR)/cocos2d-x/external",
+					"$(PROJECT_DIR)/cocos2d-x/Classes",
+				);
+				INFOPLIST_FILE = CocosLua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charles.CocosLua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocosLua/CocosLua-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627CB83C20C23A8C00D22923 /* Build configuration list for PBXProject "CocosLua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627CB85120C23A8C00D22923 /* Debug */,
+				627CB85220C23A8C00D22923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627CB85320C23A8C00D22923 /* Build configuration list for PBXNativeTarget "CocosLua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627CB85420C23A8C00D22923 /* Debug */,
+				627CB85520C23A8C00D22923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 627CB83920C23A8C00D22923 /* Project object */;
+}
